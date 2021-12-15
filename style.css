@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 11%;
+  width: 100%;
 }
 .searchBar img {
   width: 7%;
