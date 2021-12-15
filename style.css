@@ -183,4 +183,7 @@ footer p {
     align-items: center;
     justify-content: center;
   }
+  .searchBar {
+    width: 40%;
+  }
 }
