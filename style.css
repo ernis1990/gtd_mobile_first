@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-size: 10px;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar img {
+  width: 7%;
+  background: #32e17c;
+}
+input {
+  border: 3px solid #32e17c;
+  height: 100%;
+  width: 50%;
+  border-radius: 50px;
+  padding: 0px 10px;
+
+  padding-left: 25px;
+  background: url(icon.png) no-repeat left;
+  background-size: 30px;
+  background-color: white;
+}
+i {
+  background: #32e17c;
+  font-size: 25px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  background: rgb(255, 208, 0);
+}
+.hero h1 {
+  font-size: 100%;
+}
+.animalsPhoto div {
+  width: 30vw;
+  height: auto;
+  margin: 1%;
+}
+.animalsPhoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.animalsPhoto {
+  display: flex;
+  justify-content: center;
+}
+.contentTex {
+  text-align: center;
+}
+.contentTex h1 {
+  color: rgb(255, 208, 0);
+  font-size: 110%;
+}
+.secondAnimalsPhoto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secondPhotoMonkey,
+.secondPhotoDog {
+  width: 180px;
+  height: 200px;
+  padding-top: 30px;
+}
+.secondAnimalsPhoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  padding: 0;
+}
+.aboutMonkey,
+.aboutDog {
+  text-align: center;
+}
+.aboutMonkey h1,
+.aboutDog h1 {
+  font-size: 100%;
+  color: rgb(255, 174, 0);
+}
+.lineBeforeFooter {
+  width: 100%;
+  height: 1vh;
+  background-color: rgb(255, 208, 0);
+  margin-top: 2%;
+}
+footer {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer h6 {
+  color: rgb(255, 174, 0);
+  padding-top: 20%;
+  padding-bottom: 10%;
+  font-size: 100%;
+}
+footer div {
+  text-align: center;
+}
+footer p {
+  font-size: 80%;
+  color: white;
+  padding-bottom: 10%;
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    flex-direction: row;
+  }
+  header div {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .hero {
+    height: 60vh;
+  }
+  .hero h1 {
+    font-size: 200%;
+  }
+  .content {
+    margin-top: -10%;
+    width: 70%;
+  }
+  .animalsPhoto div {
+    width: 25vw;
+    margin: 2%;
+  }
+  .secondAnimalsPhoto {
+    flex-direction: row;
+  }
+  .secondAnimalsPhoto div {
+    margin-left: 2%;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .contacts {
+    margin-right: 10%;
+  }
+  .animals {
+    margin-left: 10%;
+  }
+  .monkey,
+  .dog {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
