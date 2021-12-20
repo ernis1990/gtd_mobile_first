@@ -2,12 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -17,27 +26,30 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .logo {
   font-size: 10px;
 }
+
 .searchBar {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
+
 .searchBar img {
   width: 7%;
 }
+
 input {
   border: 3px solid #f1ee08;
   height: 100%;
   width: 50%;
   border-radius: 50px;
   padding: 0px 10px;
-
   padding-left: 25px;
-  background: url(icon.png) no-repeat left;
+  background: url(img/icon.png) no-repeat left;
   background-size: 30px;
   background-color: white;
 }
@@ -48,69 +60,61 @@ input {
   align-items: center;
   width: 100%;
   height: 30vh;
-  background-image: url(background.jpeg);
+  background-image: url(img/background.jpeg);
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
 }
+
 .hero h1 {
   font-size: 100%;
   color: #ffffff;
 }
+
 .animalsPhoto div {
-  width: 30vw;
+  max-width: 20%;
   height: auto;
   margin: 1%;
+  flex-shrink: 0;
 }
-.animalsPhoto img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
+
 .animalsPhoto {
   display: flex;
   justify-content: center;
 }
-.contentTex {
-  text-align: center;
-}
+
 .contentTex h1 {
   color: rgb(255, 208, 0);
   font-size: 110%;
 }
+
 .secondAnimalsPhoto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.secondPhotoMonkey,
-.secondPhotoDog {
+
+.monkey div:first-of-type,
+.dog div:first-of-type {
   width: 180px;
   height: 200px;
   padding-top: 30px;
 }
-.secondAnimalsPhoto img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  padding: 0;
-}
-.aboutMonkey,
-.aboutDog {
-  text-align: center;
-}
+
 .aboutMonkey h1,
 .aboutDog h1 {
   font-size: 100%;
   color: rgb(255, 174, 0);
 }
+
 .lineBeforeFooter {
   width: 100%;
   height: 1vh;
   background-color: rgb(255, 208, 0);
   margin-top: 2%;
 }
+
 footer {
   background-color: darkgrey;
   display: flex;
@@ -118,15 +122,14 @@ footer {
   align-items: center;
   width: 100%;
 }
+
 footer h6 {
   color: rgb(255, 174, 0);
   padding-top: 20%;
   padding-bottom: 10%;
   font-size: 100%;
 }
-footer div {
-  text-align: center;
-}
+
 footer p {
   font-size: 80%;
   color: white;
@@ -142,40 +145,37 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  .logo {
-    text-align: center;
-  }
+
   .hero {
     height: 60vh;
   }
+
   .hero h1 {
     font-size: 200%;
   }
+
   .content {
     margin-top: -10%;
-    width: 70%;
+    width: 80%;
   }
+
   .animalsPhoto div {
-    width: 25vw;
     margin: 2%;
   }
   .secondAnimalsPhoto {
     flex-direction: row;
   }
+
   .secondAnimalsPhoto div {
     margin-left: 2%;
   }
+
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
-  .contacts {
-    margin-right: 10%;
-  }
-  .animals {
-    margin-left: 10%;
-  }
+
   .monkey,
   .dog {
     width: 50%;
@@ -183,6 +183,7 @@ footer p {
     align-items: center;
     justify-content: center;
   }
+
   .searchBar {
     width: 500px;
   }
