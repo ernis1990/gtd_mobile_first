@@ -50,7 +50,7 @@ input {
   border-radius: 50px;
   padding: 0px 10px;
   padding-left: 25px;
-  background: url(img/icon.png) no-repeat left;
+  background: url(images/icon.png) no-repeat left;
   background-size: 30px;
   background-color: white;
 }
@@ -61,7 +61,7 @@ input {
   align-items: center;
   width: 100%;
   height: 30vh;
-  background-image: url(img/background.jpeg);
+  background-image: url(images/background.jpeg);
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
